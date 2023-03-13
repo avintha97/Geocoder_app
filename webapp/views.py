@@ -5,7 +5,6 @@ from .forms import SearchForm
 import folium
 import geocoder
 
-# Create your views here.
 def index(request):
 
     if request.method =='POST':
@@ -36,14 +35,6 @@ def index(request):
     }
     return render(request,'index.html',context)
 
-# def calculate_distance_view(request):
-#     obj=get_list_or_404(Mesurements, id =1)
-
-#     context ={
-#         'distance':obj
-#     }
-
-#     return render(request,'index.html',context)
 
 
 
